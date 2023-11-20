@@ -1,0 +1,126 @@
+.documents {
+  margin-top: 1rem;
+}
+
+.documents__wrapper {
+  padding: 0 10px;
+}
+
+.documents__title {
+  text-align: center;
+}
+
+.documents__title {
+  text-align: center;
+  color: var(--first-color);
+  font-size: var(--biggest-font-size);
+}
+
+.documents__list {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.documents__item-offer {
+  padding: 4px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(93, 93, 93, 0.5);
+}
+
+.documents__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.documents__item_name-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.documents__item_title {
+  text-align: center;
+}
+
+.documents__item_logo {
+  width: 100px;
+}
+
+.documents__item_column {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 10px;
+}
+
+.documents__item_column:last-child {
+  background: #f5f5f5;
+}
+
+.documents__item_table tr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid 1px rgb(217, 217, 217);
+}
+
+.documents__item_table tr:last-child {
+  border-bottom: 0px;
+}
+
+.documents__item_table td {
+  padding: 10px 0;
+  vertical-align: top;
+}
+
+.documents__item_table td:first-child {
+  width: 40%;
+}
+
+.documents__item_table td:last-child {
+  text-align: end;
+  width: 50%;
+}
+
+.documents__item_links {
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+
+.documents__item_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 5px;
+  padding: 10px;
+  color: #fff;
+  border-radius: 4px;
+  font-size: var(--h3-font-size);
+  background-image: linear-gradient(
+    339.34deg,
+    var(--first-color-alt) 31.27%,
+    var(--first-color) 77.23%
+  );
+}
+
+.documents__item_link i {
+  font-size: 28px;
+}
+
+.documents__footnote {
+  padding: 15px 10px 0 10px;
+  font-size: var(--small-font-size);
+  font-weight: 400;
+  line-height: 1;
+  color: var(--text-color-light);
+}
