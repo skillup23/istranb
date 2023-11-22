@@ -327,7 +327,7 @@ button {
 }
 
 .performance__image {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -850,6 +850,10 @@ button {
 }
 
 @media screen and (min-width: 1440px) {
+  .performance__image {
+    max-width: 1200px;
+  }
+
   .main {
     padding: 25px 80px;
   }
