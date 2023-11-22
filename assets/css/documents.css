@@ -124,3 +124,20 @@
   line-height: 1;
   color: var(--text-color-light);
 }
+
+@media screen and (min-width: 1440px) {
+  .documents__list,
+  .documents__item_links {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .documents__item_title {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: var(--h3-font-size);
+  }
+  .documents__item_table td {
+    font-size: var(--normal-font-size);
+  }
+}

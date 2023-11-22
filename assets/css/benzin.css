@@ -12,6 +12,12 @@
   font-size: var(--biggest-font-size);
 }
 
+@media screen and (min-width: 1024px) {
+  .benzin__title {
+    font-size: var(--h1-font-size);
+  }
+}
+
 /* .benzin__list {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
