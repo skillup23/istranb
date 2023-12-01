@@ -24,27 +24,38 @@
     <link rel="stylesheet" href="assets/css/styles.css" />
 
     <title>Истринская нефтебаза</title>
+    <meta
+      name="description"
+      content="Продажа топлива с доставкой. Москва и Московская область"
+    />
   </head>
 
   <body class="body">
     <!--==================== HEADER ====================-->
-
-
-
     <header class="header" id="myHeader">
       <div class="main__nav-left">
         <nav class="header__nav">
           <ul class="nav__list">
-            <li class="nav__list_item"><a href="/istranb">Главная</a></li>
-            <li class="nav__list_item"><a href="/istranb/benzin.html">Бензин</a></li>
-            <li class="nav__list_item"><a href="/istranb/dt.html">Дизельное топливо</a></li>
-            <li class="nav__list_item"><a href="/istranb/about.html">Информация</a></li>
-            <li class="nav__list_item"><a href="/istranb/documents.html">Документы</a></li>
-            <li class="nav__list_item"><a href="/istranb/clients.html">Клиенты и партнеры</a></li>
-            <li class="nav__list_item"><a href="#">Контакты</a></li>
+            <li class="nav__list_item"><a href="/index.html">Главная</a></li>
+            <li class="nav__list_item"><a href="/benzin.html">Бензин</a></li>
+            <li class="nav__list_item">
+              <a href="/dt.html">Дизельное топливо</a>
+            </li>
+            <li class="nav__list_item"><a href="/about.html">Информация</a></li>
+            <li class="nav__list_item">
+              <a href="/documents.html">Документы</a>
+            </li>
+            <li class="nav__list_item">
+              <a href="/clients.html">Клиенты и партнеры</a>
+            </li>
+            <li class="nav__list_item"><a href="/contact.html">Контакты</a></li>
           </ul>
         </nav>
-        <img class="header__nav_img" src="assets/img/grafica1.png" alt="Бочка" />
+        <img
+          class="header__nav_img"
+          src="assets/img/grafica1.png"
+          alt="Бочка"
+        />
       </div>
       <div class="main__nav-overlay"></div>
 
@@ -58,8 +69,14 @@
           <img class="header__logo" src="assets/img/logo.png" alt="Логотип" />
         </a>
         <div class="header__info_box">
-          <a href="tel:89000000000">8 (900) 000 00 00</a>
+          <a href="tel:89660000469">+7 (966) 00 00 469</a>
           <a href="mailto:info@istranb.ru">info@istranb.ru</a>
+          <a
+            href="https://yandex.ru/maps/-/CDe3RSNp"
+            target="_blank"
+            class="header__info_map"
+            >с. Лучинское, ул. Центральная, д.1</a
+          >
         </div>
       </div>
     </header>
@@ -67,11 +84,13 @@
     <!--==================== MAIN ====================-->
     <main class="main">
       <section class="performance">
-        <!-- <h2 class="main__title performance__title">
-          ООО «ИСТРИНСКАЯ НЕФТЕБАЗА»
-        </h2> -->
         <img
-          class="performance__image"
+          class="performance__image performance__image_pc"
+          src="assets/img/foto-desktop.jpg"
+          alt="нефтебаза"
+        />
+        <img
+          class="performance__image performance__image_mobile"
           src="assets/img/foto-main.jpg"
           alt="нефтебаза"
         />
@@ -81,313 +100,8 @@
       </section>
 
       <section class="production">
+        <div class="production__list"></div>
 
-        <div class="production__list">
-          <div class="production__item-offer">
-            <div class="production__item">
-              <div class="production__item_column">
-                <div class="production__item_name-box">
-                  <h3 class="production__item_title">Бензин АИ-95</h3>
-                  <img
-                    class="production__item_logo"
-                    src="assets/img/logo.png"
-                    alt="Логотип"
-                  />
-                </div>
-                <table class="production__item_table">
-                  <tr>
-                    <td>Доставка</td>
-                    <td>Автодоставка, Самовывоз</td>
-                  </tr>
-                  <tr>
-                    <td>Наличие</td>
-                    <td>Более 100 тонн</td>
-                  </tr>
-                  <tr>
-                    <td>Плотность</td>
-                    <td>0.74</td>
-                  </tr>
-                </table>
-                <div class="production__item_links">
-                  <a href="#" class="production__item_link"
-                    >Фото продукта <i class="bx bx-image"></i
-                  ></a>
-                  <a href="#" class="production__item_link"
-                    >Паспорт качества <i class="bx bx-spreadsheet"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="production__item_column">
-                <div class="production__item_name-box production__item_name-box-price">
-                  <h3 class="production__item_title">Стоимость</h3>
-                </div>
-                <table class="production__item_table">
-                  <tr>
-                    <td>Цена топлива за тонну</td>
-                    <td>60 000 Р/т*</td>
-                  </tr>
-                  <tr>
-                    <td>Цена топлива за литр</td>
-                    <td>45.45 Р/л</td>
-                  </tr>
-                  <tr>
-                    <td>Стоимость доставки</td>
-                    <td>договорная*</td>
-                  </tr>
-                </table>
-                <div class="production__item_links production__item_links-price">
-                  <a href="#" class="production__item_link production__item_link-price"
-                    >ЗАКАЗАТЬ</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="production__item-offer">
-            <div class="production__item">
-              <div class="production__item_column">
-                <div class="production__item_name-box">
-                  <h3 class="production__item_title">Бензин АИ-92</h3>
-                  <img
-                    class="production__item_logo"
-                    src="assets/img/logo.png"
-                    alt="Логотип"
-                  />
-                </div>
-                <table class="production__item_table">
-                  <tr>
-                    <td>Доставка</td>
-                    <td>Автодоставка, Самовывоз</td>
-                  </tr>
-                  <tr>
-                    <td>Наличие</td>
-                    <td>Более 100 тонн</td>
-                  </tr>
-                  <tr>
-                    <td>Плотность</td>
-                    <td>0.73</td>
-                  </tr>
-                </table>
-                <div class="production__item_links">
-                  <a href="#" class="production__item_link"
-                    >Фото продукта <i class="bx bx-image"></i
-                  ></a>
-                  <a href="#" class="production__item_link"
-                    >Паспорт качества <i class="bx bx-spreadsheet"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="production__item_column">
-                <div class="production__item_name-box production__item_name-box-price">
-                  <h3 class="production__item_title">Стоимость</h3>
-                </div>
-                <table class="production__item_table">
-                  <tr>
-                    <td>Цена топлива за тонну</td>
-                    <td>58 300 Р/т*</td>
-                  </tr>
-                  <tr>
-                    <td>Цена топлива за литр</td>
-                    <td>43.43 Р/л</td>
-                  </tr>
-                  <tr>
-                    <td>Стоимость доставки</td>
-                    <td>договорная**</td>
-                  </tr>
-                </table>
-                <div class="production__item_links production__item_links-price">
-                  <a href="#" class="production__item_link production__item_link-price"
-                    >ЗАКАЗАТЬ</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="production__item-offer">
-            <div class="production__item">
-              <div class="production__item_column">
-                <div class="production__item_name-box">
-                  <h3 class="production__item_title">ДТ ЕВРО Сорт C</h3>
-                  <img
-                    class="production__item_logo"
-                    src="assets/img/logo.png"
-                    alt="Логотип"
-                  />
-                </div>
-                <table class="production__item_table">
-                  <tr>
-                    <td>Доставка</td>
-                    <td>Автодоставка, Самовывоз</td>
-                  </tr>
-                  <tr>
-                    <td>Наличие</td>
-                    <td>Более 100 тонн</td>
-                  </tr>
-                  <tr>
-                    <td>Плотность</td>
-                    <td>0.83</td>
-                  </tr>
-                </table>
-                <div class="production__item_links">
-                  <a href="#" class="production__item_link"
-                    >Фото продукта <i class="bx bx-image"></i
-                  ></a>
-                  <a href="#" class="production__item_link"
-                    >Паспорт качества <i class="bx bx-spreadsheet"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="production__item_column">
-                <div class="production__item_name-box production__item_name-box-price">
-                  <h3 class="production__item_title">Стоимость</h3>
-                </div>
-                <table class="production__item_table">
-                  <tr>
-                    <td>Цена топлива за тонну</td>
-                    <td>70 800 Р/т*</td>
-                  </tr>
-                  <tr>
-                    <td>Цена топлива за литр</td>
-                    <td>58.76 Р/л</td>
-                  </tr>
-                  <tr>
-                    <td>Стоимость доставки</td>
-                    <td>договорная**</td>
-                  </tr>
-                </table>
-                <div class="production__item_links production__item_links-price">
-                  <a href="#" class="production__item_link production__item_link-price"
-                    >ЗАКАЗАТЬ</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="production__item-offer">
-            <div class="production__item">
-              <div class="production__item_column">
-                <div class="production__item_name-box">
-                  <h3 class="production__item_title">ДТ ЕВРО Сорт E</h3>
-                  <img
-                    class="production__item_logo"
-                    src="assets/img/logo.png"
-                    alt="Логотип"
-                  />
-                </div>
-                <table class="production__item_table">
-                  <tr>
-                    <td>Доставка</td>
-                    <td>Автодоставка, Самовывоз</td>
-                  </tr>
-                  <tr>
-                    <td>Наличие</td>
-                    <td>Более 100 тонн</td>
-                  </tr>
-                  <tr>
-                    <td>Плотность</td>
-                    <td>0.83</td>
-                  </tr>
-                </table>
-                <div class="production__item_links">
-                  <a href="#" class="production__item_link"
-                    >Фото продукта <i class="bx bx-image"></i
-                  ></a>
-                  <a href="#" class="production__item_link"
-                    >Паспорт качества <i class="bx bx-spreadsheet"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="production__item_column">
-                <div class="production__item_name-box production__item_name-box-price">
-                  <h3 class="production__item_title">Стоимость</h3>
-                </div>
-                <table class="production__item_table">
-                  <tr>
-                    <td>Цена топлива за тонну</td>
-                    <td>71 200 Р/т*</td>
-                  </tr>
-                  <tr>
-                    <td>Цена топлива за литр</td>
-                    <td>59.10 Р/л</td>
-                  </tr>
-                  <tr>
-                    <td>Стоимость доставки</td>
-                    <td>договорная**</td>
-                  </tr>
-                </table>
-                <div class="production__item_links production__item_links-price">
-                  <a href="#" class="production__item_link production__item_link-price"
-                    >ЗАКАЗАТЬ</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- <div class="production__list">
-          <div class="production__list_item">
-            <div class="production__column">
-              <h3 class="production__column_title">ДТ ЕВРО Сорт С</h3>
-              <p class="production__column_subtitle">Дизельно топливо</p>
-            </div>
-            <div class="production__column">
-              <h3 class="production__column_title">64 200 Р/т*</h3>
-              <p class="production__column_subtitle">Цена топлива</p>
-            </div>
-            <div class="production__button"><a href="/dt">Подробнее</a></div>
-          </div>
-
-          <div class="production__list_item">
-            <div class="production__column">
-              <h3 class="production__column_title">ДТ ЕВРО Сорт E</h3>
-              <p class="production__column_subtitle">Дизельно топливо</p>
-            </div>
-            <div class="production__column">
-              <h3 class="production__column_title">64 400 Р/т*</h3>
-              <p class="production__column_subtitle">Цена топлива</p>
-            </div>
-            <div class="production__button"><a href="/dt">Подробнее</a></div>
-          </div>
-
-          <div class="production__list_item">
-            <div class="production__column">
-              <h3 class="production__column_title">ДТ ЕВРО Сорт F</h3>
-              <p class="production__column_subtitle">Дизельно топливо</p>
-            </div>
-            <div class="production__column">
-              <h3 class="production__column_title">64 300 Р/т*</h3>
-              <p class="production__column_subtitle">Цена топлива</p>
-            </div>
-            <div class="production__button"><a href="/dt">Подробнее</a></div>
-          </div>
-
-          <div class="production__list_item">
-            <div class="production__column">
-              <h3 class="production__column_title">Бензин АИ-95</h3>
-              <p class="production__column_subtitle">Бензин АИ-95</p>
-            </div>
-            <div class="production__column">
-              <h3 class="production__column_title">66 000 Р/т*</h3>
-              <p class="production__column_subtitle">Цена топлива</p>
-            </div>
-            <div class="production__button">
-              <a href="/production.html">Подробнее</a>
-            </div>
-          </div>
-
-          <div class="production__list_item">
-            <div class="production__column">
-              <h3 class="production__column_title">Бензин АИ-92</h3>
-              <p class="production__column_subtitle">Бензин АИ-92</p>
-            </div>
-            <div class="production__column">
-              <h3 class="production__column_title">62 000 Р/т*</h3>
-              <p class="production__column_subtitle">Цена топлива</p>
-            </div>
-            <div class="production__button">
-              <a href="/production.html">Подробнее</a>
-            </div>
-          </div> -->
-        </div>
         <p class="production__footnote">
           * Стоимость топлива не актуальна и в течении дня может меняться. Более
           точную информацию по наличию и стоимости топлива уточняйте, пожалуйста
@@ -456,7 +170,7 @@
               <p class="info__list_subtitle">
                 Технические особенности, преимущества и возможности нефтебазы.
               </p>
-              <a href="/istranb/about.html" class="info__list_link"
+              <a href="/about.html" class="info__list_link"
                 >Ознакомиться подробнее</a
               >
               <i class="bx bx-edit-alt info__list_icon"></i>
@@ -467,7 +181,9 @@
               <p class="info__list_subtitle">
                 Наши покупатели, поставщики и география деятельности.
               </p>
-              <a href="/istranb/clients.html" class="info__list_link">Ознакомиться подробнее</a>
+              <a href="/clients.html" class="info__list_link"
+                >Ознакомиться подробнее</a
+              >
               <i class="bx bx-briefcase-alt info__list_icon"></i>
             </div>
 
@@ -475,7 +191,9 @@
               <h4 class="info__list_title">Контакты</h4>
               <p class="info__list_subtitle">Телефон: 8 (900) 000 00 00</p>
               <p class="info__list_subtitle">Почта: info@mail.ru</p>
-              <a href="#" class="info__list_link">Хочу больше информации</a>
+              <a href="/contact.html" class="info__list_link"
+                >Хочу больше информации</a
+              >
               <i class="bx bx-message-square-detail info__list_icon"></i>
             </div>
 
@@ -485,7 +203,9 @@
                 Реквизиты компании, политика конфиденциальности,
                 пользовательское соглашение.
               </p>
-              <a href="/istranb/documents.html" class="info__list_link">Изучить подробнее</a>
+              <a href="/documents.html" class="info__list_link"
+                >Изучить подробнее</a
+              >
               <i class="bx bx-spreadsheet info__list_icon"></i>
             </div>
           </div>
@@ -532,6 +252,95 @@
       </div>
     </footer>
 
+    <!--==================== POPUP FOTO ====================-->
+    <div class="popup__overlay popup__foto">
+      <div class="popup__foto_data">
+        <img
+          src="/assets/img/closeIcon.svg"
+          alt="Закрыть"
+          class="popup__close"
+        />
+        <img src="" alt="" class="popup__foto_url" />
+        <h4 class="popup__foto_title"></h4>
+      </div>
+    </div>
+
+    <!--==================== TEMLATE CARD ====================-->
+    <template id="card-template">
+      <div class="production__item-offer">
+        <div class="production__item">
+          <div class="production__item_column">
+            <div class="production__item_name-box">
+              <h3 class="production__item_title"></h3>
+              <img
+                class="production__item_logo"
+                src="assets/img/logo.png"
+                alt="Логотип"
+              />
+            </div>
+            <table class="production__item_table production__item_table-first">
+              <tr>
+                <td>Доставка</td>
+                <td class="production__item_delivery"></td>
+              </tr>
+              <tr>
+                <td>Наличие</td>
+                <td class="production__item_availability"></td>
+              </tr>
+              <tr>
+                <td>Плотность</td>
+                <td class="production__item_density"></td>
+              </tr>
+            </table>
+            <div class="production__item_links">
+              <button class="production__item_link production__item_foto">
+                Фото продукта <i class="bx bx-image"></i>
+              </button>
+              <img
+                class="production__item_foto-toplivo"
+                src="assets/img/noFoto.jpg"
+                alt="фото товара"
+              />
+              <a
+                href="#"
+                class="production__item_link production__item_passport"
+                target="_blank"
+                >Паспорт качества <i class="bx bx-spreadsheet"></i
+              ></a>
+            </div>
+          </div>
+          <div class="production__item_column">
+            <div
+              class="production__item_name-box production__item_name-box-price"
+            >
+              <h3 class="production__item_title">Стоимость</h3>
+            </div>
+            <table class="production__item_table">
+              <tr>
+                <td>Цена топлива за тонну</td>
+                <td class="production__item_priceT"></td>
+              </tr>
+              <tr>
+                <td>Цена топлива за литр</td>
+                <td class="production__item_priceL"></td>
+              </tr>
+              <tr>
+                <td>Стоимость доставки</td>
+                <td class="production__item_priceDelivery"></td>
+              </tr>
+            </table>
+            <div class="production__item_links production__item_links-price">
+              <a
+                href="/contact.html"
+                class="production__item_link production__item_link-price"
+                >ЗАКАЗАТЬ</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </template>
+
     <!--=============== SCROLLREVEAL ===============-->
     <script src="assets/js/scrollreveal.min.js"></script>
 
@@ -540,5 +349,9 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
+
+    <!--=============== CARDS JS ===============-->
+    <script src="assets/js/dtCards.js"></script>
+    <!-- <script src="assets/js/bezinCards.js"></script> -->
   </body>
 </html>

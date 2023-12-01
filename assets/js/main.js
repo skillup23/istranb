@@ -28,14 +28,14 @@ function closeOverlay(evt) {
   }
 }
 
-function closeEsc(evt) {
-  if (evt.key === 'Escape') {
-    closeMenu();
-  }
-}
+// function closeEsc(evt) {
+//   if (evt.key === 'Escape') {
+//     closeMenu();
+//   }
+// }
 
 buttonMenu.addEventListener('click', openMenu);
-document.addEventListener('keydown', closeEsc);
+// document.addEventListener('keydown', closeEsc);
 
 /*=============== sticky mobile menu ===============*/
 window.onscroll = function () {
@@ -53,6 +53,7 @@ function myFunction() {
     header.classList.remove('sticky');
   }
 }
+
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 // function scrollHeader() {
 //   const header = document.getElementById('header');
