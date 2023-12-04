@@ -5,9 +5,8 @@ const benzinCards = [
     product: 'Бензин АИ-95',
     delivery: 'Автодоставка, Самовывоз',
     availability: 'Отсутствует',
-    density: '0.74',
-    priceT: '- Р/т*',
-    priceL: '- Р/л',
+    density: 0.74,
+    priceT: 0,
     priceDelivery: 'договорная**',
     linkFoto: 'assets/img/noFoto.jpg',
     linkPassport: '#',
@@ -16,9 +15,8 @@ const benzinCards = [
     product: 'Бензин АИ-92',
     delivery: 'Автодоставка, Самовывоз',
     availability: 'Отсутствует',
-    density: '0.73',
-    priceT: '- Р/т*',
-    priceL: '- Р/л',
+    density: 0.73,
+    priceT: 0,
     priceDelivery: 'договорная**',
     linkFoto: 'assets/img/noFoto.jpg',
     linkPassport: '#',
@@ -44,9 +42,17 @@ function createCards(item) {
   cardElement.querySelector('.production__item_density').textContent =
     item.density;
   cardElement.querySelector('.production__item_priceT').textContent =
-    item.priceT;
+    (item.priceT + '')
+      .split('')
+      .reverse()
+      .join('')
+      .replace(/(\d{3})/g, '$1 ')
+      .split('')
+      .reverse()
+      .join('')
+      .replace(/^ /, '') + ' Р/т*';
   cardElement.querySelector('.production__item_priceL').textContent =
-    item.priceL;
+    ((item.priceT * item.density) / 1000).toFixed(2) + ' Р/л';
   cardElement.querySelector('.production__item_priceDelivery').textContent =
     item.priceDelivery;
   cardElement.querySelector('.production__item_foto-toplivo').src =

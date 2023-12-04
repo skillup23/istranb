@@ -69,8 +69,8 @@
 
 .advantages__item_rounded {
   position: absolute;
-  top: 25px;
-  right: 25px;
+  top: 20px;
+  right: 20px;
   border-radius: 50%;
   background-color: var(--first-color);
   height: 50px;

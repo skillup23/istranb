@@ -66,6 +66,7 @@
   align-items: center;
   justify-content: space-between;
   border-bottom: solid 1px rgb(217, 217, 217);
+  font-size: var(--small-font-size);
 }
 
 .documents__item_table tr:last-child {
@@ -123,6 +124,12 @@
   font-weight: 400;
   line-height: 1;
   color: var(--text-color-light);
+}
+
+@media screen and (min-width: 768px) {
+  .documents__item_table tr {
+    font-size: var(--normal-font-size);
+  }
 }
 
 @media screen and (min-width: 1440px) {

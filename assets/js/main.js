@@ -10,7 +10,8 @@ function openMenu() {
   buttonMenu.classList.toggle('header__open-menu_active');
   bodyStycky.classList.toggle('sticky__body');
 
-  navMenuMobile.addEventListener('click', closeOverlay);
+  navMenuMobile.addEventListener('click', closeMenu);
+  navOverlay.addEventListener('click', closeMenu);
 }
 
 function closeMenu() {
@@ -18,24 +19,11 @@ function closeMenu() {
   navOverlay.classList.remove('is-active');
   buttonMenu.classList.remove('header__open-menu_active');
   bodyStycky.classList.remove('sticky__body');
-  popupActive.removeEventListener('click', closeOverlay);
-  document.removeEventListener('keydown', closeEsc);
+  navOverlay.removeEventListener('click', closeMenu);
+  navMenuMobile.removeEventListener('click', closeMenu);
 }
-
-function closeOverlay(evt) {
-  if (evt.target === evt.currentTarget) {
-    closeMenu();
-  }
-}
-
-// function closeEsc(evt) {
-//   if (evt.key === 'Escape') {
-//     closeMenu();
-//   }
-// }
 
 buttonMenu.addEventListener('click', openMenu);
-// document.addEventListener('keydown', closeEsc);
 
 /*=============== sticky mobile menu ===============*/
 window.onscroll = function () {

@@ -5,44 +5,50 @@ const dtCards = [
     product: 'ДТ Евро зимнее класса 1',
     delivery: 'Автодоставка, Самовывоз',
     availability: 'Более 100 тонн',
-    density: '0.83',
-    priceT: '75 000 Р/т*',
-    priceL: '62.25 Р/л',
+    density: 0.83,
+    priceT: 75000,
     priceDelivery: 'договорная**',
     linkFoto: 'assets/img/noFoto.jpg',
     linkPassport:
       'documents/Паспорт ДТЗ кл.1 №08035 от 13.11.2023 Роснефть.pdf',
   },
   {
+    product: 'ДТ Евро зимнее класса 2',
+    delivery: 'Автодоставка, Самовывоз',
+    availability: 'Более 100 тонн',
+    density: 0.82,
+    priceT: 84000,
+    priceDelivery: 'договорная**',
+    linkFoto: 'assets/img/noFoto.jpg',
+    linkPassport: 'documents/Паспорт №6944Н от 14.10.23 ДТЗ кл.2.pdf',
+  },
+  {
     product: 'ДТ Евро Сорт C',
     delivery: 'Автодоставка, Самовывоз',
     availability: 'Более 100 тонн',
-    density: '0.83',
-    priceT: '63 000 Р/т*',
-    priceL: '52.29 Р/л',
+    density: 0.83,
+    priceT: 61000,
     priceDelivery: 'договорная**',
     linkFoto: 'assets/img/noFoto.jpg',
     linkPassport:
       'documents/Паспорт ДТС №1874 от 31.10.2023 Калуганефтепродукт РНПК.pdf',
   },
-  {
-    product: 'ТС-1 Высший сорт',
-    delivery: 'Автодоставка, Самовывоз',
-    availability: 'Более 100 тонн',
-    density: '0.78',
-    priceT: '81 500 Р/т*',
-    priceL: '63.57 Р/л',
-    priceDelivery: 'договорная**',
-    linkFoto: 'assets/img/noFoto.jpg',
-    linkPassport: 'documents/Паспорт на ТС-1 №432 от 10.10.23.pdf',
-  },
+  // {
+  //   product: 'ТС-1 Высший сорт',
+  //   delivery: 'Автодоставка, Самовывоз',
+  //   availability: 'Более 100 тонн',
+  //   density: 0.78,
+  //   priceT: 81500,
+  //   priceDelivery: 'договорная**',
+  //   linkFoto: 'assets/img/noFoto.jpg',
+  //   linkPassport: 'documents/Паспорт на ТС-1 №432 от 10.10.23.pdf',
+  // },
   {
     product: 'ДТ Евро Сорт C Солнечногорск',
     delivery: 'Автодоставка, Самовывоз',
     availability: 'Более 100 тонн',
-    density: '0.83',
-    priceT: '61 000 Р/т*',
-    priceL: '50.63 Р/л',
+    density: 0.83,
+    priceT: 61000,
     priceDelivery: 'договорная**',
     linkFoto: 'assets/img/noFoto.jpg',
     linkPassport: 'documents/Паспорт ДТС №1179 от 10.11.2023 ВЛПДС.pdf',
@@ -51,9 +57,8 @@ const dtCards = [
     product: 'ДТ Евро Сорт E',
     delivery: 'Автодоставка, Самовывоз',
     availability: 'Более 100 тонн',
-    density: '0.83',
-    priceT: '64 000 Р/т*',
-    priceL: '53.12 Р/л',
+    density: 0.83,
+    priceT: 64000,
     priceDelivery: 'договорная**',
     linkFoto: 'assets/img/noFoto.jpg',
     linkPassport: 'documents/Паспорт №2313222 от 25.10.2023 Лукойл.pdf',
@@ -62,9 +67,8 @@ const dtCards = [
     product: 'ДТ Евро Сорт F',
     delivery: 'Автодоставка, Самовывоз',
     availability: 'Более 100 тонн',
-    density: '0.83',
-    priceT: '65 000 Р/т*',
-    priceL: '53.95 Р/л',
+    density: 0.83,
+    priceT: 65000,
     priceDelivery: 'договорная**',
     linkFoto: 'assets/img/noFoto.jpg',
     linkPassport: 'documents/Паспорт ДТF №658 2699339 от 01.11.2023 МНПЗ.pdf',
@@ -90,9 +94,17 @@ function createCards(item) {
   cardElement.querySelector('.production__item_density').textContent =
     item.density;
   cardElement.querySelector('.production__item_priceT').textContent =
-    item.priceT;
+    (item.priceT + '')
+      .split('')
+      .reverse()
+      .join('')
+      .replace(/(\d{3})/g, '$1 ')
+      .split('')
+      .reverse()
+      .join('')
+      .replace(/^ /, '') + ' Р/т*';
   cardElement.querySelector('.production__item_priceL').textContent =
-    item.priceL;
+    ((item.priceT * item.density) / 1000).toFixed(2) + ' Р/л';
   cardElement.querySelector('.production__item_priceDelivery').textContent =
     item.priceDelivery;
   cardElement.querySelector('.production__item_foto-toplivo').src =
